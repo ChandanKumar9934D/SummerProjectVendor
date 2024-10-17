@@ -1,0 +1,89 @@
+/* Theme colors */
+.theme-light {
+    --input-background: #ffffff;
+    --input-color: #000000;
+  }
+  
+  .theme-dark {
+    --input-background: #000000;
+    --input-color: #ffffff;
+  }
+  
+  /* Container for input and icon */
+  .login-input-container {
+    position: relative;
+    margin-bottom: 1rem;
+  }
+  
+  /* Style the input field */
+  .login-input-container input {
+    width: 100%;
+    padding-left: 3rem; /* Space for the icon */
+    height: 45px;
+    border: 1px solid #ccc;
+    border-radius: 25px; /* Rounded input */
+    background-color: var(--input-background);
+    color: var(--input-color);
+    padding: 0.5rem 1rem;
+    transition: border 0.3s ease;
+  }
+  
+  .login-input-container input:focus {
+    border-color: #198754;
+    outline: none;
+  }
+  
+  /* Style the icon */
+  .login-input-container .icoon {
+    position: absolute;
+    top: 50%;
+    left: 1rem;
+    transform: translateY(-50%);
+    color: #198754;
+  }
+  
+  /* Adjust the placeholder for better visibility */
+  .login-input-container input::placeholder {
+    color: #ccc;
+    opacity: 1; /* Override default opacity */
+  }
+  
+  /* Adjust height for proper alignment */
+  .login-input-container input {
+    box-sizing: border-box;
+  }
+  
+  /* Specific adjustments to ensure no overlap */
+  .login-input-container input {
+    padding-left: 3rem; /* Ensure padding for icons */
+  }
+  
+  /* Glow effect for buttons */
+  .btn:hover span {
+    width: 300%;
+    height: 300%;
+    background: rgba(25, 135, 84, 0.5);
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  
+  /* Glow effect for the login form container */
+  @keyframes glowing-border {
+    0% {
+      box-shadow: 0 0 5px #198754, 0 0 10px #198754, 0 0 15px #198754, 0 0 20px #198754;
+    }
+    50% {
+      box-shadow: 0 0 20px #198754, 0 0 30px #198754, 0 0 40px #198754, 0 0 50px #198754;
+    }
+    100% {
+      box-shadow: 0 0 5px #198754, 0 0 10px #198754, 0 0 15px #198754, 0 0 20px #198754;
+    }
+  }
+  
+  .login-form-container {
+    position: relative;
+    padding: 4rem;
+    border-radius: 25px; /* Rounded corners */
+    animation: glowing-border 2s infinite alternate;
+  }
+  

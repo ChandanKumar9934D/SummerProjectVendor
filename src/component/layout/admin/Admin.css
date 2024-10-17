@@ -1,0 +1,34 @@
+/* Ensure dropdown menu is styled properly for light mode */
+.dropdown-menu {
+    background-color: #fff;
+    color: #000;
+  }
+  
+  /* Ensure dropdown items are styled properly for light mode */
+  .dropdown-item {
+    color: #000;
+  }
+  
+  /* Ensure dropdown item hover effect for light mode */
+  .dropdown-item:hover {
+    background-color: #198754;
+    color: #fff;
+  }
+  
+  /* Ensure dropdown menu is styled properly for dark mode */
+  [data-theme="dark"] .dropdown-menu {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  /* Ensure dropdown items are styled properly for dark mode */
+  [data-theme="dark"] .dropdown-item {
+    color: #fff;
+  }
+  
+  /* Ensure dropdown item hover effect for dark mode */
+  [data-theme="dark"] .dropdown-item:hover {
+    background-color: #198754;
+    color: #fff;
+  }
+  

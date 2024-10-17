@@ -1,0 +1,137 @@
+/* Define theme variables */
+.theme-light {
+    --input-background: #ffffff;
+    --input-color: #000000;
+  }
+  
+  .theme-dark {
+    --input-background: #000000;
+    --input-color: #ffffff;
+  }
+  
+  /* Container for input and icon specific to Register component */
+  .register-input-container {
+    position: relative;
+  
+    margin-bottom: 30px; 
+  }
+  
+  
+  .form-check {
+    margin-bottom: 30px; /* Adjust the value as needed */
+  }
+  
+  .btn {
+    margin-bottom: 10px; /* Adjust the value as needed */
+  }
+  
+  
+  
+  
+  /* Style the input field specific to Register component */
+  .register-input-container input,
+  .register-input-container textarea,
+  .register-input-container select {
+    width: 100%;
+    padding-left: 2.5rem; /* Space for the icon */
+    height: 45px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    background-color: var(--input-background);
+    color: var(--input-color);
+    padding: 0.5rem 1rem;
+    transition: border 0.3s ease;
+  }
+.card {
+    position: relative;
+    padding: 20px;
+    border-radius: 10px;
+    background-color:var(--input-background);
+    background-color:var(--input-background);;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+ .card:hover {
+    box-shadow: 0 0 20px rgba(2, 120, 51, 0.8); /* Green glow effect */
+    transform: scale(1.05); /* Slightly enlarge the card */
+}
+  .register-input-container input:focus,
+  .register-input-container textarea:focus,
+  .register-input-container select:focus {
+    border-color: #198754;
+    outline: none;
+  }
+  
+  /* Style the icon specific to Register component */
+  .register-input-container .icoon {
+    position: absolute;
+    top: 50%;
+    left: 1rem;
+    transform: translateY(-50%);
+    color: #198754;
+  }
+  
+  /* Additional styles for textarea specific to Register component */
+  .register-input-container textarea {
+    height: auto;
+    border-radius: 15px;
+  }
+  
+  /* Style for the custom label specific to Register component */
+  .register-custom-label {
+    color: #198754;
+  }
+  
+  /* Style for buttons specific to Register component */
+  
+  
+  .register-btn-style:hover {
+    background-color: #145a32;
+  }
+  
+  /* Animated heading specific to Register component */
+  .register-animated-heading {
+    animation: fadeIn 1.5s;
+  }
+  
+  @keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+  }
+  
+  /* Breadcrumbs specific to Register component */
+  .register-breadcrumbs-custom-path {
+    display: flex;
+    list-style: none;
+    padding: 0;
+  }
+  
+  .register-breadcrumbs-custom-path li {
+    margin-right: 0.5rem;
+  }
+  
+  /* Adjust the placeholder for better visibility */
+  .register-input-container input::placeholder,
+  .register-input-container textarea::placeholder {
+    color: #ccc;
+    opacity: 1; /* Override default opacity */
+  }
+  
+  /* Adjust height for proper alignment */
+  .register-input-container input,
+  .register-input-container textarea,
+  .register-input-container select {
+    box-sizing: border-box;
+  }
+  
+  /* Specific adjustments to ensure no overlap */
+  .register-input-container input,
+  .register-input-container textarea,
+  .register-input-container select {
+    padding-left: 3rem; /* Ensure padding for icons */
+  }

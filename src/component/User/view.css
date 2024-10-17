@@ -1,0 +1,51 @@
+.sort-options {
+    margin: 20px 0;
+  }
+  
+  .sort-title {
+    display: flex;
+    align-items: center;
+    font-size: 1.2em;
+    color: #198754;
+    margin-bottom: 10px;
+  }
+  
+  .sort-title i {
+    margin-right: 10px;
+  }
+
+  
+  .sort-options select {
+    border: 1px solid #198754;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1em;
+    color: #333;
+    background-color: #f8f9fa;
+    
+  }
+  
+  .sort-select select:focus {
+    border-color: #198754;
+    outline: none;
+  }
+  
+  .sort-select option {
+    font-size: 1em;
+  }
+  
+  /* Optional: Adding a hover effect to the select */
+  .sort-select select:hover {
+    background-color: #e9ecef;
+  }
+
+  .scrollable-text {
+    width: 300px; /* Set the fixed width */
+    height: 100px; /* Set the height for the scrollable area */
+    overflow-y: auto; /* Enable vertical scrolling */
+    /* padding: 10px; Optional: Add padding for better readability */
+    scrollbar-width: none; /* For Firefox */
+    -ms-overflow-style: none; /* For Internet Explorer and Edge */
+}
+
+  
